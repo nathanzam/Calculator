@@ -1,0 +1,15 @@
+body {
+  overflow-x: hidden;
+}
+
+input.form-control {
+  width: 666px;
+}
+
+.btn-lg {
+  padding: 48px;
+}
+
+.table>tbody>tr>td {
+  border-top: 0;
+}
