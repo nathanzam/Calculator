@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>jQuery Calculator</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -22,32 +22,32 @@
     <div class="container">
       <div class="col-md-8 col-md-offset-2" ng-controller="functionality">
         <h2>Calculator</h2>
-        <td><input class="form-control" type="text" value=""></td>
+        <td><input id="calculatorInput" class="form-control" type="text" value=""></td>
         <table class="table table-condensed">
           <tbody>
             <tr>
-              <td><button class="btn-lg number" type="button" name="button" value="7">7</button></td>
-              <td><button class="btn-lg number" type="button" name="button" value="8">8</button></td>
-              <td><button class="btn-lg number" type="button" name="button" value="9">9</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="/">&divide;</button></td>
+              <td><button id="btn7" class="btn-lg number" type="button" name="button" value="7">7</button></td>
+              <td><button id="btn8" class="btn-lg number" type="button" name="button" value="8">8</button></td>
+              <td><button id="btn9" class="btn-lg number" type="button" name="button" value="9">9</button></td>
+              <td><button id="btnDivide" class="btn-lg" type="button" name="button" value="/">&divide;</button></td>
             </tr>
             <tr>
-              <td><button class="btn-lg" type="button" name="button" value="4">4</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="5">5</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="6">6</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="*">&times;</button></td>
+              <td><button id="btn4" class="btn-lg" type="button" name="button" value="4">4</button></td>
+              <td><button id="btn5" class="btn-lg" type="button" name="button" value="5">5</button></td>
+              <td><button id="btn6" class="btn-lg" type="button" name="button" value="6">6</button></td>
+              <td><button id="btnMultiply" class="btn-lg" type="button" name="button" value="*">&times;</button></td>
             </tr>
             <tr>
-              <td><button class="btn-lg" type="button" name="button" value="1">1</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="2">2</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="3">3</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="-">&minus;</button></td>
+              <td><button id="btn1" class="btn-lg" type="button" name="button" value="1">1</button></td>
+              <td><button id="btn2" class="btn-lg" type="button" name="button" value="2">2</button></td>
+              <td><button id="btn3" class="btn-lg" type="button" name="button" value="3">3</button></td>
+              <td><button id="btnMinus" class="btn-lg" type="button" name="button" value="-">&minus;</button></td>
             </tr>
             <tr>
-              <td><button class="btn-lg" type="button" name="button" value="0">0</button></td>
-              <td><button class="btn-lg" type="button" name="button">C</button></td>
-              <td><button class="btn-lg" type="button" name="button">&equals;</button></td>
-              <td><button class="btn-lg" type="button" name="button" value="+">&plus;</button></td>
+              <td><button id="btn0" class="btn-lg" type="button" name="button" value="0">0</button></td>
+              <td><button id="btnClear" class="btn-lg" type="button" name="button">C</button></td>
+              <td><button id="btnEquals" class="btn-lg" type="button" name="button">&equals;</button></td>
+              <td><button id="btnPlus" class="btn-lg" type="button" name="button" value="+">&plus;</button></td>
             </tr>
           </tbody>
         </table>
@@ -57,6 +57,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./app.js" charset="utf-8"></script>
 </body>
 
 </html>
