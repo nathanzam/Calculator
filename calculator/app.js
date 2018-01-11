@@ -136,7 +136,7 @@ $(document).ready(function(){
           myArray[2] = previous;
           console.log(myArray);
           if (myArray[1] === " + "){
-            return myArray[0] + myArray[2];
+            return Number(myArray[0]) + Number(myArray[2]);
           } else if (myArray[1] === " - "){
             return myArray[0] - myArray[2];
           } else if (myArray[1] === " * "){
